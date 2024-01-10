@@ -1,1 +1,378 @@
-<app-navbar></app-navbar>
+<nav class="navbar background p-3">
+        <div class="container d-flex align-items-center">
+                <div class="d-flex">
+                        <button class="btn"  type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                                aria-controls="staticBackdrop" >
+                                <i class="fa-solid fa-bars text-light line"></i>
+                        </button>
+
+                        <div class="offcanvas offcanvas-start" [ngStyle]="{'display':displayoffcan}" tabindex="-1"
+                                id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                                <div class="offcanvas-header bgLine">
+                                        <h5 class="offcanvas-title" id="staticBackdropLabel">Hello</h5>
+                                        <div class="d-flex justify-content-end ms-auto">
+                                                <button type="button"
+                                                        class="btn btn-outline-light rounded-5 d-flex">Sign In</button>
+                                        </div>
+                                        <button type="button"  class="btn-close" data-bs-dismiss="offcanvas"
+                                                aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                        <div class="ms-1">
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-house home"></i><span
+                                                                class="text-secondary ms-2 sideBar">Home</span></a>
+                                                <hr>
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-list home"></i> <span
+                                                                class="text-secondary ms-2 sideBar">Shop by
+                                                                Category</span></a>
+                                                <hr>
+
+
+                                                <h6 class="account">My Account</h6>
+                                                <br>
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-box home"></i><span
+                                                                class="text-secondary ms-2 sideBar">My orders</span></a>
+                                                <hr>
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-list-check home"></i>
+                                                        <span class="text-secondary ms-2 sideBar">My List</span></a>
+                                                <hr>
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-heart home"></i><span
+                                                                class="text-secondary ms-2 sideBar">Wishlist</span></a>
+                                                <hr>
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-wallet home"></i>
+                                                        <span class="text-secondary ms-2 sideBar">JioMart
+                                                                Wallet</span></a>
+                                                <hr>
+
+                                                <h6 class="account">Offers & More</h6>
+                                                <br>
+                                                <a class="nav-link" href="#"><i
+                                                                class="fa-solid fa-dharmachakra home"></i><span
+                                                                class="text-secondary ms-2 sideBar">Offer
+                                                                Store</span></a>
+                                                <hr>
+                                                <a class="nav-link" (click)="openmodel()" ><i
+                                                        class="fa-solid fa-plus"></i><span
+                                                        class="text-secondary ms-2 sideBar">uplode Product
+                                                        </span></a>
+                                        <hr>
+                                                <a class="nav-link" href="#"><i
+                                                                class="fa-solid fa-money-bill home"></i><span
+                                                                class="text-secondary ms-2 sideBar">Coupon
+                                                                Store</span></a>
+                                                <hr>
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-gift home"></i><span
+                                                                class="text-secondary ms-2 sideBar">Gift
+                                                                Store</span></a>
+                                                <hr>
+
+
+                                                <h6 class="account">Help & Support</h6>
+                                                <br>
+                                                <a class="nav-link" href="#"><i
+                                                                class="fa-solid fa-circle-question home"></i><span
+                                                                class="text-secondary ms-2 sideBar">FAQs/Need
+                                                                Help</span></a>
+                                                <hr>
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-users home"></i><span
+                                                                class="text-secondary ms-2 sideBar">About us</span></a>
+                                                <hr>
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-phone home"></i><span
+                                                                class="text-secondary ms-2 sideBar">Contact
+                                                                us</span></a>
+                                                <hr>
+                                                <a class="nav-link" href="#"><i class="fa-solid fa-file home"></i><span
+                                                                class="text-secondary ms-2 sideBar">Guide</span></a>
+                                                <hr>
+                                                <a class="nav-link" href="#"><i
+                                                                class="fa-solid fa-circle-exclamation home"></i><span
+                                                                class="text-secondary ms-2 sideBar">Caution
+                                                                Notice</span></a>
+                                                <hr>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="d-flex ms-1">
+                                <a class="navbar-brand style d-flex brand" href="#">WowVeg</a>
+                        </div>
+                        <div class="d-md-flex d-none align-items-center ms-4">
+                                <a class="nav-link deliver d-flex align-items-center" href="#">
+                                        <i class="fa-solid fa-plus d-flex align-items-center me-1"></i>
+                                        <span></span>
+                                        <b class="bold d-flex align-items-center ms-1"></b>
+                                </a>
+                        </div>
+                </div>
+                <div class="d-flex align-items-center">
+                        <div class="form">
+                                <i class="fa fa-search"></i>
+                                <input type="text" class="form-control form-input rounded-5 d-flex align-items-center"
+                                        placeholder="Search anything">
+                                <span class="left-pan d-md-flex d-none d-flex"><i
+                                                class="fa-solid fa-list-ul mt-1"></i></span>
+
+                        </div>
+                        <div>
+                                <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping ms-4 shopping"></i></a>
+                        </div>
+
+                        <div class=" d-flex d-md-flex d-none ">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-user ms-4 user"></i><span
+                                                class="ms-2 sign">Sign In</span></a>
+                        </div>
+                </div>
+        </div>
+</nav>
+
+<nav class="navbar background2 d-md-flex d-none">
+        <div class="container">
+                <div class="d-flex">
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Groceries
+                                </button>
+                                <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Fruits & Vegetables</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Dairy & Backery</button></li>
+                                        <li><button class="dropdown-item" type="button">Staples</button></li>
+                                        <li><button class="dropdown-item" type="button">Snacks & Branded Foods</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Beverages</button></li>
+                                        <li><button class="dropdown-item" type="button">Personal Cere</button></li>
+                                        <li><button class="dropdown-item" type="button">Home Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Apparel</button></li>
+                                        <li><button class="dropdown-item" type="button">Home & Kitchen</button></li>
+                                        <li><button class="dropdown-item" type="button">Mom & Baby Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Books</button></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Premium Fruits
+                                </button>
+                                <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Apples & Pears</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Banana, Melons &
+                                                        Coconut</button></li>
+                                        <li><button class="dropdown-item" type="button">Cherries, Berries & Exotic
+                                                        <br>Fruits</button></li>
+                                        <li><button class="dropdown-item" type="button">Citrus, Mangoes &
+                                                        Grapes</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Beverages</button></li>
+                                        <li><button class="dropdown-item" type="button">Personal Cere</button></li>
+                                        <li><button class="dropdown-item" type="button">Home Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Apparel</button></li>
+                                        <li><button class="dropdown-item" type="button">Home & Kitchen</button></li>
+                                        <li><button class="dropdown-item" type="button">Mom & Baby Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Books</button></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Home & Kitchen
+                                </button>
+                                <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Apples & Pears</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Banana, Melons &
+                                                        Coconut</button></li>
+                                        <li><button class="dropdown-item" type="button">Cherries, Berries & Exotic
+                                                        <br>Fruits</button></li>
+                                        <li><button class="dropdown-item" type="button">Citrus, Mangoes &
+                                                        Grapes</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Beverages</button></li>
+                                        <li><button class="dropdown-item" type="button">Personal Cere</button></li>
+                                        <li><button class="dropdown-item" type="button">Home Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Apparel</button></li>
+                                        <li><button class="dropdown-item" type="button">Home & Kitchen</button></li>
+                                        <li><button class="dropdown-item" type="button">Mom & Baby Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Books</button></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Fashion
+                                </button>
+                                <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Apples & Pears</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Banana, Melons &
+                                                        Coconut</button></li>
+                                        <li><button class="dropdown-item" type="button">Cherries, Berries & Exotic
+                                                        <br>Fruits</button></li>
+                                        <li><button class="dropdown-item" type="button">Citrus, Mangoes &
+                                                        Grapes</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Beverages</button></li>
+                                        <li><button class="dropdown-item" type="button">Personal Cere</button></li>
+                                        <li><button class="dropdown-item" type="button">Home Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Apparel</button></li>
+                                        <li><button class="dropdown-item" type="button">Home & Kitchen</button></li>
+                                        <li><button class="dropdown-item" type="button">Mom & Baby Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Books</button></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Electronics
+                                </button>
+                                <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Apples & Pears</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Banana, Melons &
+                                                        Coconut</button></li>
+                                        <li><button class="dropdown-item" type="button">Cherries, Berries & Exotic
+                                                        <br>Fruits</button></li>
+                                        <li><button class="dropdown-item" type="button">Citrus, Mangoes &
+                                                        Grapes</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Beverages</button></li>
+                                        <li><button class="dropdown-item" type="button">Personal Cere</button></li>
+                                        <li><button class="dropdown-item" type="button">Home Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Apparel</button></li>
+                                        <li><button class="dropdown-item" type="button">Home & Kitchen</button></li>
+                                        <li><button class="dropdown-item" type="button">Mom & Baby Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Books</button></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Beauty
+                                </button>
+                                <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Apples & Pears</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Banana, Melons &
+                                                        Coconut</button></li>
+                                        <li><button class="dropdown-item" type="button">Cherries, Berries & Exotic
+                                                        <br>Fruits</button></li>
+                                        <li><button class="dropdown-item" type="button">Citrus, Mangoes &
+                                                        Grapes</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Beverages</button></li>
+                                        <li><button class="dropdown-item" type="button">Personal Cere</button></li>
+                                        <li><button class="dropdown-item" type="button">Home Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Apparel</button></li>
+                                        <li><button class="dropdown-item" type="button">Home & Kitchen</button></li>
+                                        <li><button class="dropdown-item" type="button">Mom & Baby Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Books</button></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Jewellery
+                                </button>
+                                <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Apples & Pears</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Banana, Melons &
+                                                        Coconut</button></li>
+                                        <li><button class="dropdown-item" type="button">Cherries, Berries & Exotic
+                                                        <br>Fruits</button></li>
+                                        <li><button class="dropdown-item" type="button">Citrus, Mangoes &
+                                                        Grapes</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Beverages</button></li>
+                                        <li><button class="dropdown-item" type="button">Personal Cere</button></li>
+                                        <li><button class="dropdown-item" type="button">Home Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Apparel</button></li>
+                                        <li><button class="dropdown-item" type="button">Home & Kitchen</button></li>
+                                        <li><button class="dropdown-item" type="button">Mom & Baby Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Books</button></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Home Improvement
+                                </button>
+                                <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Apples & Pears</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Banana, Melons &
+                                                        Coconut</button></li>
+                                        <li><button class="dropdown-item" type="button">Cherries, Berries & Exotic
+                                                        <br>Fruits</button></li>
+                                        <li><button class="dropdown-item" type="button">Citrus, Mangoes &
+                                                        Grapes</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Beverages</button></li>
+                                        <li><button class="dropdown-item" type="button">Personal Cere</button></li>
+                                        <li><button class="dropdown-item" type="button">Home Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Apparel</button></li>
+                                        <li><button class="dropdown-item" type="button">Home & Kitchen</button></li>
+                                        <li><button class="dropdown-item" type="button">Mom & Baby Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Books</button></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Sports, Toys & Luggage
+                                </button>
+                                <ul class="dropdown-menu">
+                                        <li><button class="dropdown-item" type="button">Apples & Pears</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Banana, Melons &
+                                                        Coconut</button></li>
+                                        <li><button class="dropdown-item" type="button">Cherries, Berries & Exotic
+                                                        <br>Fruits</button></li>
+                                        <li><button class="dropdown-item" type="button">Citrus, Mangoes &
+                                                        Grapes</button>
+                                        </li>
+                                        <li><button class="dropdown-item" type="button">Beverages</button></li>
+                                        <li><button class="dropdown-item" type="button">Personal Cere</button></li>
+                                        <li><button class="dropdown-item" type="button">Home Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Apparel</button></li>
+                                        <li><button class="dropdown-item" type="button">Home & Kitchen</button></li>
+                                        <li><button class="dropdown-item" type="button">Mom & Baby Care</button></li>
+                                        <li><button class="dropdown-item" type="button">Books</button></li>
+                                </ul>
+                        </div>
+                </div>
+        </div>
+</nav>
+
+<!-- modal substitution -->
+<div class="backdrop" [ngStyle]="{'display':display}"></div>
+<div class="modal" tabindex="20" id="productModal" [ngStyle]="{'display':display}">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">posted product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="onCloseHandled()"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="uplodeform">
+                <label for="productname">productname: </label>
+              <input id="productname" type="text" formControlName="name"><br><br>
+               <label for="productprice">product Price:</label>
+               <input id="productprice" type="text" formControlName="price"><br><br>
+               <label for="productType">productType:</label>
+               <input id="productType" type="text" formControlName="type"><br><br>
+              <input type="file" (change)="onFileSelected($event)" formControlName="image">
+              <button (click)="uploadProduct()">submit</button>
+            </form>
+           </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="onCloseHandled()">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<router-outlet></router-outlet>

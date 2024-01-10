@@ -1,0 +1,184 @@
+.background {
+    background-color: #0078ad;
+}
+
+.style {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: "JioType", helvetica, arial, sans-serif;
+}
+
+.shop {
+    color: #fff;
+    font-size: 20px;
+}
+
+.person {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sign {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.bgBlack:hover {
+    background-color: black;
+    border-radius: 30px;
+}
+
+.bold {
+    font-weight: bold;
+    font-family: "JioType", helvetica, arial, sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+
+.deliver {
+    color: #fff;
+}
+
+.line {
+    font-size: 20px;
+}
+
+.brand {
+    font-size: 25px;
+}
+
+.search {
+    position: relative;
+    left: 39px;
+}
+
+.list {
+    position: relative;
+    right: 41px;
+}
+
+.searchIn:active {
+    font-size: 20px;
+}
+
+.listIn {
+    font-size: 20px;
+}
+
+.bgLine {
+    background-color: #0078ad;
+}
+
+.home {
+    color: #0078ad;
+    font-size: 22px;
+}
+
+.sideBar {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "JioType", helvetica, arial, sans-serif;
+}
+
+.account {
+    color: black;
+    font-weight: bold;
+    font-family: "JioType", helvetica, arial, sans-serif;
+}
+
+/* .search-icon{
+    border-radius: 25px 0 0 25px;
+    border-color: white;
+    
+}
+.search-input{
+    border-radius: 0 17px 17px 0;
+} */
+
+/*  */
+
+.form {
+
+    position: relative;
+}
+
+.form .fa-search {
+
+    position: absolute;
+    top: 20px;
+    left: 19px;
+    color: #9ca3af;
+
+}
+
+.form span {
+
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db;
+
+}
+
+.left-pan {
+    padding-left: 7px;
+}
+
+.left-pan i {
+
+    padding-left: 10px;
+}
+
+.form-input {
+
+    height: 55px;
+    text-indent: 33px;
+    border-radius: 10px;
+}
+
+.form-input:focus {
+
+    box-shadow: none;
+    border: none;
+}
+
+.shopping {
+    font-size: 20px;
+    color: white;
+}
+
+.user {
+    font-size: 20px;
+    color: white;
+}
+
+.sign {
+    color: white;
+    font-weight: bold;
+    font-family: "JioType", helvetica, arial, sans-serif;
+    font-size: 18px;
+}
+
+.background2 {
+    background-color: #0c5273;
+}
+
+.dropdown .btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown .btn::after {
+    display: none;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
